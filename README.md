@@ -85,7 +85,7 @@ const pair = await getRate('USD', 'QAR', { apiKey: 'art_live_...' });
 {
   bank: 'qcb',
   name: 'Qatar Central Bank',
-  rate_date: '2026-10-06',   // Qatar Central Bank's own publication date
+  rate_date: '2026-10-08',   // Qatar Central Bank's own publication date
   source: 'USD',
   target: 'QAR',
   rate: 3.64,
@@ -113,7 +113,7 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'qcb',
   name: 'Qatar Central Bank',
-  rate_date: '2026-10-06',
+  rate_date: '2026-10-08',
   rates: [
     { "base": "USD", "quote": "QAR", "type": "reference", "value": 3.64 },
     // … the rest of the published table (7 currencies vs QAR)
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'qcb-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'QAR', from: '2026-01-01', to: '2026-10-06' },
+  { source: 'USD', target: 'QAR', from: '2026-01-01', to: '2026-10-08' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'QAR',
   from: '2026-01-01',
-  to: '2026-10-06',
+  to: '2026-10-08',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-06', rate: 3.64, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-08', rate: 3.64, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -221,6 +221,7 @@ curl "https://allratestoday.com/api/v1/central-bank/qcb/latest?format=xml&api_ke
 
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('qcb')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
+- Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate qcb ...` command
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
