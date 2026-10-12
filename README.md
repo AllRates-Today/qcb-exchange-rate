@@ -40,16 +40,16 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Qatar Central Bank table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Qatar Central Bank — 7 rates. Updated 2026-10-09.
+Published **2026-10-12** by Qatar Central Bank — 7 rates. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | QAR | reference | 2.5438 |
-| CAD | QAR | reference | 2.5648 |
-| CHF | QAR | reference | 4.39 |
-| EUR | QAR | reference | 4.0936 |
-| GBP | QAR | reference | 4.8276 |
-| HKD | QAR | reference | 0.4645 |
+| AUD | QAR | reference | 2.5439 |
+| CAD | QAR | reference | 2.5564 |
+| CHF | QAR | reference | 4.3899 |
+| EUR | QAR | reference | 4.0855 |
+| GBP | QAR | reference | 4.8275 |
+| HKD | QAR | reference | 0.4646 |
 | USD | QAR | reference | 3.64 |
 
 Source: [Official rates published by QCB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/qcb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
