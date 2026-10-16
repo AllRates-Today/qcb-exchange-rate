@@ -42,15 +42,15 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Qatar Central Bank — 7 rates. Updated 2026-10-15.
+Published **2026-10-16** by Qatar Central Bank — 7 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | QAR | reference | 2.5349 |
-| CAD | QAR | reference | 2.5657 |
-| CHF | QAR | reference | 4.3924 |
-| EUR | QAR | reference | 4.0882 |
-| GBP | QAR | reference | 4.8275 |
+| AUD | QAR | reference | 2.5326 |
+| CAD | QAR | reference | 2.5719 |
+| CHF | QAR | reference | 4.4098 |
+| EUR | QAR | reference | 4.0941 |
+| GBP | QAR | reference | 4.8502 |
 | HKD | QAR | reference | 0.4646 |
 | USD | QAR | reference | 3.64 |
 
