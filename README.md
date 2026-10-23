@@ -47,16 +47,16 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-22 by Qatar Central Bank — 7 rates. Updated 2026-10-22.</summary>
+<summary>Table as text: published 2026-10-23 by Qatar Central Bank — 7 rates. Updated 2026-10-23.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | QAR | reference | 2.558 |
-| CAD | QAR | reference | 2.5977 |
-| CHF | QAR | reference | 4.4291 |
-| EUR | QAR | reference | 4.0982 |
-| GBP | QAR | reference | 4.8835 |
-| HKD | QAR | reference | 0.4646 |
+| AUD | QAR | reference | 2.5537 |
+| CAD | QAR | reference | 2.6016 |
+| CHF | QAR | reference | 4.4371 |
+| EUR | QAR | reference | 4.086 |
+| GBP | QAR | reference | 4.8805 |
+| HKD | QAR | reference | 0.4649 |
 | USD | QAR | reference | 3.64 |
 
 </details>
