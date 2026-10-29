@@ -47,16 +47,16 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Qatar Central Bank — 7 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Qatar Central Bank — 7 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | QAR | reference | 2.5633 |
-| CAD | QAR | reference | 2.592 |
-| CHF | QAR | reference | 4.3934 |
-| EUR | QAR | reference | 4.0537 |
-| GBP | QAR | reference | 4.845 |
-| HKD | QAR | reference | 0.4648 |
+| AUD | QAR | reference | 2.5689 |
+| CAD | QAR | reference | 2.6061 |
+| CHF | QAR | reference | 4.3976 |
+| EUR | QAR | reference | 4.0602 |
+| GBP | QAR | reference | 4.8535 |
+| HKD | QAR | reference | 0.4647 |
 | USD | QAR | reference | 3.64 |
 
 </details>
@@ -222,6 +222,7 @@ Qatar Central Bank publishes daily riyal exchange rates for the major currencies
 
 - Publisher's own page: [Exchange rates](https://www.qcb.gov.qa/en/exchange-rates) · [www.qcb.gov.qa](https://www.qcb.gov.qa)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Qatar Central Bank rates page](https://allratestoday.com/central-bank-rates-api/qcb/)
+- In the API: usually by **08:20 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
