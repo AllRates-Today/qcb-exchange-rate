@@ -24,39 +24,24 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Qatar Central Bank table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/qcb?source=USD&target=QAR"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/qcb').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Qatar Central Bank table](https://allratestoday.com/api/open/central-bank/qcb/table.svg)](https://allratestoday.com/central-bank-rates-api/qcb/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Qatar Central Bank — 7 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Qatar Central Bank — 7 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | QAR | reference | 2.5689 |
-| CAD | QAR | reference | 2.6061 |
-| CHF | QAR | reference | 4.3976 |
-| EUR | QAR | reference | 4.0602 |
-| GBP | QAR | reference | 4.8535 |
-| HKD | QAR | reference | 0.4647 |
+| AUD | QAR | reference | 2.5636 |
+| CAD | QAR | reference | 2.6091 |
+| CHF | QAR | reference | 4.4329 |
+| EUR | QAR | reference | 4.0775 |
+| GBP | QAR | reference | 4.8813 |
+| HKD | QAR | reference | 0.4648 |
 | USD | QAR | reference | 3.64 |
 
 </details>
